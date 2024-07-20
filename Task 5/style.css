@@ -1,0 +1,97 @@
+/* Media Query */
+
+
+/* Task 5 - Responsive for mobile Screen */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Screen size  */
+
+@media only screen and (min-width: 768px) {
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    .box {
+        font-size: 1.2rem;
+        text-align: center;
+        padding-top: 20px;
+        color: #fff;
+    }
+    .left {
+        width: 10%;
+        height: 100%;
+        background-color: #484848;
+    }
+    .middle {
+        width: 80%;
+        height: 100%;
+    }
+    .top {
+        width: 100%;
+        height: 50%;
+        background-color: rgb(29, 132, 29);
+    }
+    .bottom {
+        width: 100%;
+        height: 50%;
+        background-color: rgb(209, 145, 25);
+    }
+    .right {
+        background-color: #484848;
+        width: 10%;
+        height: 100%;
+    }
+}
+
+
+/* Responsive for mobile size */
+
+@media only screen and (max-width: 768px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        color: #fff;
+        height: 100vh;
+        position: relative;
+    }
+    .box {
+        font-size: 1.2rem;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .left {
+        width: 100%;
+        height: 70px;
+        background-color: #484848;
+    }
+    .middle {
+        width: 100%;
+    }
+    .top {
+        width: 100%;
+        height: 70px;
+        background-color: rgb(29, 132, 29);
+    }
+    .bottom {
+        width: 100%;
+        height: 70px;
+        background-color: rgb(209, 145, 25);
+    }
+    .right {
+        position: absolute;
+        background-color: #484848;
+        width: 100%;
+        height: 70px;
+        bottom: 0px;
+    }
+}

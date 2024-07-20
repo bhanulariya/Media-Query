@@ -1,0 +1,44 @@
+/* Media Query */
+
+
+/* Task 2 */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+#container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+img {
+    width: 30%;
+    margin: 5px;
+}
+
+
+/* Media Query for maximum width 800px */
+
+@media screen and (max-width:800px) {
+    #container img {
+        width: 45%;
+    }
+}
+
+
+/* Media Query for maximum width 500px */
+
+@media screen and (max-width:500px) {
+    #container img {
+        width: 100%;
+    }
+}

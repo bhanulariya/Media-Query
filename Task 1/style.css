@@ -1,0 +1,45 @@
+/* Media Query */
+
+
+/* Task 1 */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    font-size: 1rem;
+    background-color: rgb(229, 229, 229);
+}
+
+main,
+footer {
+    padding: 10px;
+}
+
+
+/* Media Query apply */
+
+@media screen and (max-width:600px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100px;
+        background-color: blue;
+        color: white;
+        font-size: 1rem;
+    }
+}
